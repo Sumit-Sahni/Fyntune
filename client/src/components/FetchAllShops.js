@@ -107,6 +107,7 @@ const AllShops = () => {
                      <div className="card-body">
                       <h5 className="card-title">Shop Name - {item.ShopName}</h5>
                       <h6 className="card-subtitle mb-2 text-muted">Address - {item.Area}</h6>
+                      <h5 className="card-subtitle mb-2 text-muted">Category - {item.Category}</h5>
                       <h6  className="card-title">Open Date -{moment(item.OpeningDate).format("MMM Do YYYY")} </h6>
                        <h6  className="card-title">Open Date - {moment(item.ClosingDate).format("MMM Do YYYY")}</h6>
                        <button onClick={()=>{deleteShop(item._id); window.location.reload();}}  className="btn btn-danger">Delete</button>
@@ -122,7 +123,8 @@ const AllShops = () => {
                    <div className="card"style={{width: "18rem"}} key={index}>
                     <div className="card-body">
                      <h5 className="card-title">Shop Name - {item.ShopName}</h5>
-                     <h6 className="card-subtitle mb-2 text-muted">Address - {item.Area}</h6>
+                     <h5 className="card-subtitle mb-2 text-muted">Address - {item.Area}</h5>
+                     <h5 className="card-subtitle mb-2 text-muted">Category - {item.Category}</h5>
                      <h6  className="card-title">Open Date -{moment(item.OpeningDate).format("MMM Do YY")} </h6>
                       <h6  className="card-title">Open Date - {moment(item.ClosingDate).format("MMM Do YY")}</h6>
                       <button onClick={()=>{deleteShop(item._id); window.location.reload();}}  className="btn btn-danger">Delete</button>
